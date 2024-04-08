@@ -1,0 +1,10 @@
+<mat-card class="card-container">
+	<mat-card-title>
+	{{ currentCategory?.name }}
+	</mat-card-title>
+	<mat-card-content>
+	<div *ngIf="currentCategory?.words?.length ?? 'N/A'">
+	Words: {{ currentCategory?.words?.length ?? 'N/A' }}
+	</div>
+	</mat-card-content>
+ </mat-card>

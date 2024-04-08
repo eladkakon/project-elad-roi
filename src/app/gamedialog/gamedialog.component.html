@@ -1,0 +1,19 @@
+ <h4 mat-dialog-title >Choose Game</h4>
+ <mat-dialog-content>
+        <mat-form-field>
+          <mat-label>Game</mat-label>
+          <mat-select (selectionChange)="onGame($event.value)" [(value)]="selected">
+              <mat-option *ngFor="let game1 of game" [value]="game1">{{ game1.name }}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <h5>
+          Game Difficulty: {{ selected?.gameDifficult }}<br>
+          Descriptions: {{ selected?.description }}
+        </h5>
+      </mat-dialog-content>
+
+      <button mat-button mat-dialog-close>Close</button>
+        <button mat-raised-button color="warn" (click)="play()" mat-dialog-close>PLAY</button>
+     
+  
+  

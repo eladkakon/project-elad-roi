@@ -1,0 +1,6 @@
+<h1>CHOOSE CATEGORY</h1>
+    <div class="category-view-container">
+     <div *ngFor="let p of category" class="category-card" (click)="categorySelected(p)">
+     <app-category-card [currentCategory]="p"></app-category-card>
+     </div>
+    </div>

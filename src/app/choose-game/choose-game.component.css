@@ -1,0 +1,6 @@
+.category-view-container {
+	display: flex;
+ }
+ .category-card {
+	margin: 8px;
+ }
